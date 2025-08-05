@@ -1,0 +1,36 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+    themes: synthwave --default;
+}
+
+@theme {
+    --font-rocket-rinder: "Rocket Rinder", "sans-serif";
+    --font-streamster: "Streamster", "sans-serif";
+    --font-stereofunk: "Stereofunk", "sans-serif";
+    --default-font-family: "Oxanium", "sans-serif";
+}
+
+@font-face {
+    font-family: "Rocket Rinder";
+    src: url("/fonts/Rocket Rinder.otf");
+}
+@font-face {
+    font-family: "Streamster";
+    src: url("/fonts/Streamster.ttf");
+}
+@font-face {
+    font-family: "Stereofunk";
+    src: url("/fonts/Stereofunk.ttf");
+}
+@font-face {
+    font-family: "Matrix Code NFI";
+    src: url("/fonts/Matrix Code NFI.ttf");
+}
+
+body {
+    @apply cursor-none;
+}
+
+code {
+    font-family: "Cascadia Code", monospace;
+}

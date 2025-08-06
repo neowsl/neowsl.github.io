@@ -7,7 +7,9 @@
     --font-rocket-rinder: "Rocket Rinder", "sans-serif";
     --font-streamster: "Streamster", "sans-serif";
     --font-stereofunk: "Stereofunk", "sans-serif";
-    --default-font-family: "Oxanium", "sans-serif";
+    --font-oxanium: "Oxanium", "sans-serif";
+    --font-cascadia-code: "Cascadia Code", "monospace";
+    --default-font-family: "Inter", "sans-serif";
 }
 
 @font-face {
@@ -25,10 +27,6 @@
 @font-face {
     font-family: "Matrix Code NFI";
     src: url("/fonts/Matrix Code NFI.ttf");
-}
-
-body {
-    @apply cursor-none;
 }
 
 code {

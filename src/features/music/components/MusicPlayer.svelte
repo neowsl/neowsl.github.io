@@ -87,25 +87,27 @@
         >
             Welcome to Neal's website!
         </h3>
-        <p class="pt-2">Turn up the volume;</p>
-        <p>Hit notes to score!</p>
-        <div class="flex items-center gap-2 py-2">
-            {#if ON_MOBILE}
-                Use
-                <div class="flex items-center gap-1">
-                    <kbd class="kbd">◀︎</kbd>
-                    <div class="flex flex-col gap-1">
-                        <kbd class="kbd">▲</kbd>
-                        <kbd class="kbd">▼</kbd>
+        <div class="font-oxanium">
+            <p class="pt-2">Turn up the volume;</p>
+            <p>Hit notes to score!</p>
+            <div class="flex items-center gap-2 py-2">
+                {#if ON_MOBILE}
+                    Use
+                    <div class="flex items-center gap-1">
+                        <kbd class="kbd">◀︎</kbd>
+                        <div class="flex flex-col gap-1">
+                            <kbd class="kbd">▲</kbd>
+                            <kbd class="kbd">▼</kbd>
+                        </div>
+                        <kbd class="kbd">▶︎</kbd>
                     </div>
-                    <kbd class="kbd">▶︎</kbd>
-                </div>
-                or your mouse;
-            {:else}
-                Tap the sides of your screen;
-            {/if}
+                    or your mouse;
+                {:else}
+                    Tap the sides of your screen;
+                {/if}
+            </div>
+            <p>Scroll down to learn more!</p>
         </div>
-        <p>Scroll down to learn more!</p>
         <div class="modal-action">
             <form method="dialog" onsubmit={play}>
                 <button class="btn font-rocket-rinder btn-primary">Play!</button

@@ -111,6 +111,10 @@
 </div>
 
 <style>
+    * {
+        @apply cursor-none;
+    }
+
     #synthwave-background {
         background: linear-gradient(
             to bottom,

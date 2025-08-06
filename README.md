@@ -1,38 +1,16 @@
-# sv
+# neowsl
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+> Neal Wang's portfolio website
 
-## Creating a project
+## Project Structure
 
-If you're seeing this, you've probably already done this step. Congrats!
+Derived from the [Bulletproof React](https://github.com/alan2207/bulletproof-react/blob/master/docs/project-structure.md) project structure.
+- `src/app/routes/` is renamed to `src/app/views/` since this is an SPA.
+- `src/stores/` is renamed to `src/state/` to reflect Svelte's state management.
+- `tests/` contains unit tests.
 
-```sh
-# create a new project in the current directory
-npx sv create
+## Sources
 
-# create a new project in my-app
-npx sv create my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```sh
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```sh
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+- Synthwave fonts: https://graphicpie.com/best-synthwave-fonts
+- Toyota AE86 model: https://skfb.ly/o8CNI
+- Inception top: DarKobra, CC BY-SA 3.0, via Wikimedia Commons

@@ -9,6 +9,12 @@ const config = {
         adapter: adapter({
             fallback: "index.html",
         }),
+        paths: {
+            base: "/",
+        },
+        prerender: {
+            entries: ["*"],
+        },
         alias: {
             $features: "./src/features",
         },

@@ -1,5 +1,6 @@
 {
     "name": "neowsl.github.io",
+    "homepage": "https://github.com/neowsl/neowsl.github.io",
     "private": true,
     "version": "0.0.1",
     "type": "module",

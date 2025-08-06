@@ -6,9 +6,7 @@ import { mdsvex } from "mdsvex";
 const config = {
     preprocess: [vitePreprocess(), mdsvex()],
     kit: {
-        adapter: adapter({
-            fallback: "200.html",
-        }),
+        adapter: adapter(),
         alias: {
             $features: "./src/features",
         },

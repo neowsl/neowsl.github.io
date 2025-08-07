@@ -1,5 +1,13 @@
 <script lang="ts">
-    import { Info, Music, Pause, Play, StepForward } from "@lucide/svelte";
+    import {
+        Forward,
+        Info,
+        Music,
+        Pause,
+        Play,
+        StepForward,
+    } from "@lucide/svelte";
+    import { afterNavigate } from "$app/navigation";
     import { CONTROLS_DELAY } from "$lib/config";
     import { mp } from "$lib/stores/mp.svelte";
     import { ON_MOBILE } from "$lib/utils/common";
@@ -13,8 +21,14 @@
     let showControls = $state(false);
     let showToast = $state(false);
 
-    $effect(() => {
+    afterNavigate(({ from }) => {
         mp.audioEl = audioEl;
+
+        if (from?.url) {
+            modalEl?.showModal();
+            showControls = true;
+            return;
+        }
 
         setTimeout(() => {
             modalEl?.showModal();
@@ -90,8 +104,8 @@
         <div class="font-oxanium">
             <p class="pt-2">Turn up the volume;</p>
             <p>Hit notes to score!</p>
-            <div class="flex items-center gap-2 py-2">
-                {#if ON_MOBILE}
+            {#if ON_MOBILE}
+                <div class="flex items-center gap-2 py-2">
                     Use
                     <div class="flex items-center gap-1">
                         <kbd class="kbd">◀︎</kbd>
@@ -102,10 +116,10 @@
                         <kbd class="kbd">▶︎</kbd>
                     </div>
                     or your mouse;
-                {:else}
-                    Tap the sides of your screen;
-                {/if}
-            </div>
+                </div>
+            {:else}
+                <p>Tap the sides of your screen;</p>
+            {/if}
             <p>Scroll down to learn more!</p>
         </div>
         <div class="modal-action">
@@ -119,13 +133,13 @@
 
 {#if showControls}
     <div class="fixed bottom-4 flex w-screen justify-center gap-4">
-        <div class="tooltip tooltip-top" data-tip="Track info">
+        <div class="tooltip tooltip-left" data-tip="Track info">
             <button class="btn px-2 btn-soft btn-primary" onclick={toast}>
                 <Info />
             </button>
         </div>
         <div
-            class="tooltip tooltip-top"
+            class="tooltip tooltip-left"
             data-tip={mp.paused ? "Play" : "Pause"}
         >
             <button
@@ -135,12 +149,19 @@
                 {#if mp.paused}<Play />{:else}<Pause />{/if}
             </button>
         </div>
-        <div class="tooltip tooltip-top" data-tip="Skip track">
+        <div class="tooltip tooltip-left" data-tip="Skip track">
             <button class="btn px-2 btn-soft btn-primary" onclick={play}>
                 <StepForward />
             </button>
         </div>
     </div>
+
+    <!-- <div class="fixed top-8 right-4"> -->
+    <!--     <a class="btn animate-bounce btn-outline btn-secondary" href="/bio"> -->
+    <!--         <Forward /> -->
+    <!--         Go to Bio! -->
+    <!--     </a> -->
+    <!-- </div> -->
 
     {#if showToast}
         <div class="toast z-50">

@@ -87,7 +87,7 @@ export class MatrixRain {
     init = () => {
         this.resize();
 
-        this.canvas.addEventListener("resize", this.resize);
+        window.addEventListener("resize", this.resize);
         window.addEventListener("mousemove", this.mousemove);
     };
 
@@ -96,7 +96,7 @@ export class MatrixRain {
             cancelAnimationFrame(this.animationId);
         }
 
-        this.canvas.removeEventListener("resize", this.resize);
+        window.removeEventListener("resize", this.resize);
         window.removeEventListener("mousemove", this.mousemove);
     };
 }

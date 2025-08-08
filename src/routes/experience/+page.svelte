@@ -1,6 +1,20 @@
 <script>
+    import MetallicText from "$lib/components/MetallicText.svelte";
     import NewsCard from "./NewsCard.svelte";
 </script>
+
+<div id="hero" class="hero h-64">
+    <div class="hero-overlay bg-black/70"></div>
+    <div class="hero-content text-center text-neutral-content">
+        <div class="max-w-md">
+            <a href="/">
+                <h1 id="name" class="mb-4 text-5xl md:text-6xl">
+                    <MetallicText>Experience</MetallicText>
+                </h1>
+            </a>
+        </div>
+    </div>
+</div>
 
 <div class="mt-12 flex p-4 sm:p-8 md:justify-center">
     <article class="lg-prose-xl prose max-w-none md:max-w-2/3">
@@ -45,3 +59,13 @@
         </div>
     </article>
 </div>
+
+<style>
+    #hero {
+        background-image: url("/images/gears.png");
+    }
+
+    #name {
+        view-transition-name: name;
+    }
+</style>

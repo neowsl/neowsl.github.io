@@ -69,7 +69,7 @@
 <div id="hero" class="flex h-screen flex-col items-center" bind:this={heroEl}>
     <div id="title" class="mt-[20vh] flex flex-col items-center">
         <div
-            class={`tooltip ${externalNavigation && showVisuals ? "tooltip-open" : ""}`}
+            class={`tooltip tooltip-secondary ${externalNavigation && showVisuals ? "tooltip-open" : ""}`}
             data-tip="Click me!"
         >
             <a class="cursor-pointer" href="/bio">

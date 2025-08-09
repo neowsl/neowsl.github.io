@@ -4,11 +4,11 @@
 
 <div class="relative inline-block tracking-wide">
     <span
-        class="soft-shadow font-rocket-rinder absolute animate-pulse select-none"
+        class="soft-shadow absolute animate-pulse font-rocket-rinder select-none"
     >
         {@render children()}
     </span>
-    <span class="metallic font-rocket-rinder relative select-none">
+    <span class="metallic relative font-rocket-rinder select-none">
         {@render children()}
     </span>
 </div>

@@ -24,7 +24,7 @@
     {#if glitched}
         <sub class="flex items-center pt-2 md:pt-4">
             <p
-                class="glitch text-primary font-[Zhi_Mang_Xing] text-4xl select-none sm:text-6xl md:text-7xl"
+                class="glitch font-[Zhi_Mang_Xing] text-4xl text-primary select-none sm:text-6xl md:text-7xl"
             >
                 <span aria-hidden="true">{TEXT}</span>
                 {TEXT}
@@ -33,7 +33,7 @@
         </sub>
     {:else}
         <sub
-            class="font-streamster text-secondary sub-glow text-3xl select-none sm:text-5xl md:text-6xl"
+            class="sub-glow font-streamster text-3xl text-secondary select-none sm:text-5xl md:text-6xl"
         >
             Software Engineer
         </sub>

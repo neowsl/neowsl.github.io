@@ -1,0 +1,21 @@
+- id: quickbytes
+  title: Axiom Presentation
+  abstract: Showcasing an innovative method of approaching work instructions. Understanding how short feedback loops can lead to long-term success.
+  date: 2025-07-10T13:00:00.000-08:00
+  end: 2025-07-10T14:00:00.000-08:00
+  name: QuickBytes
+  location: |
+      Schweitzer Engineering Laboratories
+      2440 Northeast Hopkins Court, Pullman, WA 99163
+
+- id: orchestra
+  title: Facing the Stage
+  image: /images/talks/orchestra.png
+  abstract: Composed an original piece, "Little Peanuts", dedicated to the Senior Class of 2025. Also delivered the orchestra's closing speech, reflecing on key highlights and looking ahead to the future.
+  date: 2025-05-05T19:30:00.000-08:00
+  end: 2025-05-05T21:30:00.000-08:00
+  name: Pullman High Orchestra, Spring Concert
+  location: |
+      Pullman High School
+      510 NW Greyhound Way, Pullman, WA 99163
+  link: https://www.youtube.com/live/c68LVrBn09U?si=l7yNGTyyA2D5RBS1&t=5901

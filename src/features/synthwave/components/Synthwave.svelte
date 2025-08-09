@@ -69,7 +69,7 @@
     $effect(() => {
         game.restart();
 
-        mp.waveform;
+        mp.waveform; // eslint-disable-line
     });
 
     onDestroy(() => {
@@ -115,7 +115,7 @@
     <T.Mesh material={gridMaterial}>
         <T.PlaneGeometry args={[30, 20]} />
     </T.Mesh>
-    {#await gltf then { scene }}
+    {#await $gltf then { scene }}
         <T
             position={[carX, -1.8, carY + 0.3]}
             rotation={[
@@ -129,7 +129,7 @@
         />
     {/await}
     <T.Group position={[0, -3.5 + 2.6, 0.1]}>
-        {#each notes as note}
+        {#each notes as note, i (i)}
             <T.Mesh position={note.position.toArray()}>
                 <T.SphereGeometry
                     args={[

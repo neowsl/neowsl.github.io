@@ -71,8 +71,8 @@ export class Stream {
         }
 
         for (let i = 0; i < this.chars.length; i++) {
-            let x = this.x + CHAR_WIDTH / 2;
-            let y = i * CHAR_HEIGHT - CHAR_HEIGHT / 2;
+            const x = this.x + CHAR_WIDTH / 2;
+            const y = i * CHAR_HEIGHT - CHAR_HEIGHT / 2;
 
             if (y > stop) {
                 break;

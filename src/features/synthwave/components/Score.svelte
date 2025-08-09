@@ -6,7 +6,7 @@
         score.hit = 0;
         score.total = 0;
 
-        mp.waveform;
+        mp.waveform; //eslint-disable-line
     });
 
     const scorePercent = $derived.by(() => {

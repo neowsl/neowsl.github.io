@@ -1,12 +1,5 @@
 <script lang="ts">
-    import {
-        Forward,
-        Info,
-        Music,
-        Pause,
-        Play,
-        StepForward,
-    } from "@lucide/svelte";
+    import { Info, Music, Pause, Play, StepForward } from "@lucide/svelte";
     import { afterNavigate } from "$app/navigation";
     import { CONTROLS_DELAY } from "$lib/config";
     import { mp } from "$lib/stores/mp.svelte";

@@ -145,7 +145,7 @@ export class Game {
             return;
         }
 
-        let nextPeak = getPeak(
+        const nextPeak = getPeak(
             mp.audioEl.currentTime + MP_OFFSET + NOTE_SPAWN_OFFSET,
         );
         if (nextPeak === -1) {

@@ -60,7 +60,7 @@
                 <UserRoundCheck />
             </div>
             <div class="stat-title">Subscribers</div>
-            <div class="stat-value">1.3K</div>
+            <div class="stat-value text-2xl sm:text-4xl">1.3K</div>
             <div class="stat-desc">@neowsl</div>
         </div>
 
@@ -69,7 +69,7 @@
                 <Star />
             </div>
             <div class="stat-title">GitHub Stars</div>
-            <div class="stat-value">2</div>
+            <div class="stat-value text-2xl sm:text-4xl">2</div>
             <div class="stat-desc">Thanks Mom!</div>
         </div>
 
@@ -77,22 +77,22 @@
             <div class="stat-figure hidden text-secondary md:block">
                 <Zap />
             </div>
-            <div class="stat-title">Neovim Config</div>
-            <div class="stat-value">906</div>
+            <div class="stat-title w-20 text-xs">Neovim Config</div>
+            <div class="stat-value text-2xl sm:text-4xl">906</div>
             <div class="stat-desc">Lines of Code</div>
         </div>
     </div>
 </div>
 
 <div class="mt-16 flex flex-col items-center">
-    <div class="w-xl">
+    <div class="w-full px-4 md:w-xl md:px-0">
         <h1
             class="mb-8 text-center font-rocket-rinder text-2xl text-violet-400"
         >
             Hello, I'm Neal! 🐬
         </h1>
         <div class="md:text-lg">
-            <p class="mb-2">
+            <p class="mb-4">
                 <strong>Specialties:</strong> Full-Stack Development, UX Research,
                 Machine Learning, Computer Vision, Leadership, Problem Solving
             </p>

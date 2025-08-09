@@ -22,8 +22,8 @@
     };
 </script>
 
-<div class="flex justify-center px-4">
-    <article class="my-12 prose lg:prose-xl">
+<div class="my-8 flex justify-center p-4 sm:p-8">
+    <article class="prose lg:prose-xl">
         <h1>{title}</h1>
         <p>{date.toDateString()}</p>
         {#if image}

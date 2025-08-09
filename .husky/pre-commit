@@ -1,2 +1,5 @@
+echo "🚚 Checking code style..."
 bun run lint
+echo "🚚 Running tests..."
 bun test
+echo "🚀 All checks passed! You're good to go!"

@@ -115,7 +115,8 @@
     <T.Mesh material={gridMaterial}>
         <T.PlaneGeometry args={[30, 20]} />
     </T.Mesh>
-    {#await $gltf then { scene }}
+    <!-- eslint-disable -->
+    {#await gltf then { scene }}
         <T
             position={[carX, -1.8, carY + 0.3]}
             rotation={[

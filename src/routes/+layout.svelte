@@ -31,6 +31,9 @@
 
     <title>Neal Wang</title>
 
+    <meta name="description" content="Neal Wang's personal website" />
+    <meta name="author" content="Neal Wang" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
         rel="preconnect"

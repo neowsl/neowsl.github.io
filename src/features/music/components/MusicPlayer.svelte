@@ -113,7 +113,7 @@
             {:else}
                 <p>Tap the sides of your screen;</p>
             {/if}
-            <p>Scroll down to learn more!</p>
+            <p>Click my name to learn more!</p>
         </div>
         <div class="modal-action">
             <form method="dialog" onsubmit={play}>

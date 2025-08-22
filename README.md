@@ -15,3 +15,4 @@ Derived from the [Bulletproof React](https://github.com/alan2207/bulletproof-rea
 - Synthwave fonts: https://graphicpie.com/best-synthwave-fonts
 - Toyota AE86 model: https://skfb.ly/o8CNI
 - Inception top: DarKobra, CC BY-SA 3.0, via Wikimedia Commons
+- All banner images are taken by me

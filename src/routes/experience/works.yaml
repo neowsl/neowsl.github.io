@@ -1,5 +1,6 @@
 - title: Lead AI Engineer
   employer: Schweitzer Engineering Laboratories (Internship)
+  link: https://selinc.com
   dates: May 2024 - September 2025
   description:
       - Contributed 400+ commits and 10K lines of production code, emphasizing scalability and maintainability across systems
@@ -11,6 +12,7 @@
 
 - title: Lead UX Designer/Researcher
   employer: Schweitzer Engineering Laboratories (Internship)
+  link: https://selinc.com
   dates: May 2024 - September 2025
   description:
       - Spearheaded development of 3D work instruction platform (TypeScript React, Three.js, C# ASP.NET); accelerated 4-month project to MVP in under 3 weeks, enabling early user testing
@@ -20,13 +22,15 @@
 
 - title: IT Technician
   employer: Pullman School District (Internship)
+  link: https://pullmanschools.org
   dates: June 2022 - August 2023
   description:
       - Installed AV infrastructure (projectors + electrical devices) and imaged teacher computers in 50+ classrooms
       - Enrolled and repaired 200+ Chromebooks for school-wide student distribution
 
 - title: Educational Computer Science YouTube Channel
-  employer: YouTube
+  employer: "@neowsl"
+  link: https://youtube.com/@neowsl
   dates: May 2021 - Present
   description:
       - 1.3K subscribers, 77 videos, 100K views, YouTube Partner Program

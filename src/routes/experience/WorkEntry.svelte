@@ -2,6 +2,7 @@
     export interface Work {
         title: string;
         employer: string;
+        link: string;
         dates: string;
         description: string[];
     }
@@ -11,11 +12,11 @@
     }
 
     const { work }: Props = $props();
-    const { title, employer, dates, description } = work;
+    const { title, employer, link, dates, description } = work;
 </script>
 
 <h2>{title}</h2>
-<i>{employer}</i>
+<a href={link}><i>{employer}</i></a>
 <div>{dates}</div>
 <ul>
     {#each description as d, i (i)}

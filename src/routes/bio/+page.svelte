@@ -22,9 +22,7 @@
                     <MetallicText>Neal Wang</MetallicText>
                 </h1>
             </a>
-            <p class="font-bold md:text-xl">
-                Lead Software Engineer / UX Researcher
-            </p>
+            <p class="font-bold md:text-xl">Lead AI Engineer / UX Researcher</p>
             <p class="mb-4 md:text-xl">Schweitzer Engineering Laboratories</p>
             <div class="flex justify-center gap-4">
                 <Contact href="mailto:nealwang.sh@protonmail.com" tip="Email">

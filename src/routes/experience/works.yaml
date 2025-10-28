@@ -1,0 +1,32 @@
+- title: Lead AI Engineer
+  employer: Schweitzer Engineering Laboratories (Internship)
+  dates: May 2024 - September 2025
+  description:
+      - Contributed 400+ commits and 10K lines of production code, emphasizing scalability and maintainability across systems
+      - Reduced defect risk for 300K+ electronic devices annually with 98.8% AP using AI-driven quality-control image processing software (PyTorch, OpenCV, Detectron2)
+      - Reduced streaming service latency by 36% with multithreaded design (UDP, FFmpeg)
+      - Optimized computational throughput by 95% by designing innovative image calibration/segmentation techniques
+      - Led and mentored 4 interns, improving code quality and team efficiency through task assignments, code reviews, and Agile ceremonies (sprint planning, retros)
+      - Sole high school engineer at a 7,000+ employee company; earned full development responsibilities and presented weekly technical demos to company executives and VPs
+
+- title: Lead UX Designer/Researcher
+  employer: Schweitzer Engineering Laboratories (Internship)
+  dates: May 2024 - September 2025
+  description:
+      - Spearheaded development of 3D work instruction platform (TypeScript React, Three.js, C# ASP.NET); accelerated 4-month project to MVP in under 3 weeks, enabling early user testing
+      - Boosted HCI accessibility and efficiency by 37% through UI/UX redesign, authoring mixed-methods UX research report to inform future improvements
+      - Integrated Go + PostgreSQL backend services and embedded Lua scripting for real-time rendering, and automated builds and tests with Jenkins + Docker CI/CD pipelines
+      - Collaborated with product line, test engineering, and manufacturing teams to align technical solutions with end-user needs.
+
+- title: IT Technician
+  employer: Pullman School District (Internship)
+  dates: June 2022 - August 2023
+  description:
+      - Installed AV infrastructure (projectors + electrical devices) and imaged teacher computers in 50+ classrooms
+      - Enrolled and repaired 200+ Chromebooks for school-wide student distribution
+
+- title: Educational Computer Science YouTube Channel
+  employer: YouTube
+  dates: May 2021 - Present
+  description:
+      - 1.3K subscribers, 77 videos, 100K views, YouTube Partner Program

@@ -41,7 +41,7 @@
                     <Linkedin />
                 </Contact>
                 <Contact
-                    href="https://codeforces.com/profile/mathletedev"
+                    href="https://codeforces.com/profile/neowsl"
                     tip="Codeforces"
                 >
                     <ChartNoAxesColumn />

@@ -3,11 +3,11 @@
   link: https://selinc.com
   dates: May 2024 - September 2025
   description:
-      - Contributed 400+ commits and 10K lines of production code, emphasizing scalability and maintainability across systems
       - Reduced defect risk for 300K+ electronic devices annually with 98.8% AP using AI-driven quality-control image processing software (PyTorch, OpenCV, Detectron2)
       - Reduced streaming service latency by 36% with multithreaded design (UDP, FFmpeg)
       - Optimized computational throughput by 95% by designing innovative image calibration/segmentation techniques
       - Led and mentored 4 interns, improving code quality and team efficiency through task assignments, code reviews, and Agile ceremonies (sprint planning, retros)
+      - Contributed 400+ commits and 10K lines of production code, emphasizing scalability and maintainability across systems
       - Sole high school engineer at a 7,000+ employee company; earned full development responsibilities and presented weekly technical demos to company executives and VPs
 
 - title: Lead UX Designer/Researcher
@@ -20,13 +20,14 @@
       - Integrated Go + PostgreSQL backend services and embedded Lua scripting for real-time rendering, and automated builds and tests with Jenkins + Docker CI/CD pipelines
       - Collaborated with product line, test engineering, and manufacturing teams to align technical solutions with end-user needs.
 
-- title: IT Technician
-  employer: Pullman School District (Internship)
-  link: https://pullmanschools.org
-  dates: June 2022 - August 2023
+- title: "Teaching Assistant: CSE 12x"
+  employer: University of Washington
+  link: https://courses.cs.washington.edu/courses/cse14x/ta
+  dates: January 2026 - Present
   description:
-      - Installed AV infrastructure (projectors + electrical devices) and imaged teacher computers in 50+ classrooms
-      - Enrolled and repaired 200+ Chromebooks for school-wide student distribution
+      - Serve as Teaching Assistant for introductory programming, teaching weekly sections for 22 students
+      - Lead development of interactive demo websites (Python, SvelteKit) to translate abstract CS concepts into intuitive, real-time visualizations
+      - Host office hours and provide individualized support on programming assignments
 
 - title: Educational Computer Science YouTube Channel
   employer: "@neowsl"

@@ -1,0 +1,41 @@
+🚧 Work in progress...
+
+~ Feel free to give suggestions!
+
+# Reading
+
+1. `2025-12-12` The Bible (ESV)
+2. `2025------` The Fragrant Flower Blooms with Dignity
+3. `2025-08-21` Feel-Good Productivity
+4. `2025------` Blue Box
+5. `2025-11-30` Logicomix
+
+# Watching
+
+1. `2025-04-06` The Lord of the Rings (2003)
+2. `2013-??-??` Inception (2010)
+3. `2024-05-07` Clannad: After Story (2008)
+4. `2018-??-??` Your Name (2016)
+5. `2025-02-07` Frieren: Beyond Journey's End (2023)
+6. `2022-??-??` Interstellar (2014)
+7. `2025-09-17` KPop Demon Hunters (2025)
+8. `2020-??-??` Naruto: Shippuden (2007)
+9. `2025-11-08` Blade Runner 2049 (2017)
+10. `2023-07-28` Oppenheimer (2023)
+11. `2015-??-??` Back to the Future (1985)
+
+# Classical Music
+
+1. The Bartered Bride
+2. Tchaikovsky Violin Concerto
+3. Sibelius Violin Concerto
+4. Mahler Symphony No. 4
+5. Tchaikovsky Symphony No. 2
+5. Holst Planets Suite
+
+# Fun Stuff
+
+- [Every UUID](https://everyuuid.com)
+- [One Million Checkboxes](https://onemillioncheckboxes.com)
+- [Library of Babel](https://libraryofbabel.info)
+- [Typing the technical interview](https://aphyr.com/posts/342-typing-the-technical-interview)

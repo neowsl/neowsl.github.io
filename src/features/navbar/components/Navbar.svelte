@@ -33,6 +33,8 @@
         <span> -> </span>
         <a class="link link-secondary link-hover" href="/event">Events</a>
         <span> -> </span>
+        <a class="link link-secondary link-hover" href="/library">Library</a>
+        <span> -> </span>
         <a class="link link-secondary link-hover" href="/art" target="_blank">
             Creative
         </a>
@@ -70,6 +72,7 @@
             <li><a href="/experience" onclick={closeMenu}>Experience</a></li>
             <li><a href="/publication" onclick={closeMenu}>Research</a></li>
             <li><a href="/event" onclick={closeMenu}>Events</a></li>
+            <li><a href="/library" onclick={closeMenu}>Library</a></li>
             <li><a href="/art" onclick={closeMenu}>Creative</a></li>
             <li><a href="/uses" onclick={closeMenu}>Uses</a></li>
         </ul>

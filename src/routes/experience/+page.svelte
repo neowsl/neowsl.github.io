@@ -1,5 +1,5 @@
 <script lang="ts">
-    import MetallicText from "$lib/components/MetallicText.svelte";
+    import Banner from "$lib/components/Banner.svelte";
     import yaml from "js-yaml";
     import articlesRaw from "./articles.yaml?raw";
     import NewsCard, { type Article } from "./NewsCard.svelte";
@@ -10,18 +10,7 @@
     const works = yaml.load(worksRaw) as Work[];
 </script>
 
-<div id="hero" class="hero h-64">
-    <div class="hero-overlay bg-black/70"></div>
-    <div class="hero-content text-center text-neutral-content">
-        <div class="max-w-md">
-            <a href="/">
-                <h1 id="name" class="mb-4 text-4xl md:text-6xl">
-                    <MetallicText>Experience</MetallicText>
-                </h1>
-            </a>
-        </div>
-    </div>
-</div>
+<Banner title="Experience" image="gears" />
 
 <div class="mt-12 flex p-4 sm:p-8 md:justify-center">
     <article class="prose max-w-none md:w-2/3 lg:prose-xl">
@@ -44,13 +33,3 @@
         </div>
     </article>
 </div>
-
-<style>
-    #hero {
-        background-image: url("/images/gears.png");
-    }
-
-    #name {
-        view-transition-name: name;
-    }
-</style>

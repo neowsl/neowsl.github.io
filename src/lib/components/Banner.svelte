@@ -4,9 +4,10 @@
     interface Props {
         title: string;
         image: string;
+        smallerText: boolean;
     }
 
-    const { title, image }: Props = $props();
+    const { title, image, smallerText }: Props = $props();
 </script>
 
 <div
@@ -18,7 +19,10 @@
     <div class="hero-content text-center text-neutral-content">
         <div class="max-w-md">
             <a href="/">
-                <h1 id="name" class="mb-4 text-5xl md:text-6xl">
+                <h1
+                    id="name"
+                    class={`mb-4 ${smallerText ? "text-4xl" : "text-5xl"} md:text-6xl`}
+                >
                     <MetallicText>{title}</MetallicText>
                 </h1>
             </a>

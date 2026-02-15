@@ -10,7 +10,7 @@
     const works = yaml.load(worksRaw) as Work[];
 </script>
 
-<Banner title="Experience" image="gears" />
+<Banner title="Experience" image="gears" smallerText />
 
 <div class="mt-12 flex p-4 sm:p-8 md:justify-center">
     <article class="prose max-w-none md:w-2/3 lg:prose-xl">

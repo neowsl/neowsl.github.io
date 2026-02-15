@@ -13,7 +13,10 @@
     };
 </script>
 
-<nav id="navbar" class="flex h-16 items-center bg-base-300 px-4">
+<nav
+    id="navbar"
+    class="sticky top-0 z-50 flex h-16 items-center bg-base-300 px-4"
+>
     <a class="font-rocket-rinder text-xl text-secondary" href="/">
         Neal Wang
     </a>

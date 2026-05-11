@@ -1,7 +1,9 @@
+/*! 🌼 daisyUI 5.0.50 */
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 @plugin "daisyui" {
     themes: synthwave --default;
+    logs: false;
 }
 
 @theme {

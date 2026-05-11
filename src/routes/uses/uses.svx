@@ -1,11 +1,11 @@
+[Dotfiles](https://github.com/neowsl/nix-home)
+
 **Colour Scheme**: [Catppuccin](https://github.com/catppuccin/catppuccin)
 
 **Distro:** [NixOS](https://nixos.org)
 
-**Editor:** [Neovim](https://neovim.io)
+**Editor:** [Doom Emacs](https://github.com/doomemacs/doomemacs) / [Neovim](https://neovim.io)
 
 **Terminal:** [kitty](https://sw.kovidgoyal.net/kitty)
 
-**Tiling Compositor:** [Hyprland](https://hyprland.org)
-
-**Managing Dotfiles:** [Home Manager](https://nix-community.github.io/home-manager)
+**Compositor:** [niri](https://github.com/niri-wm/niri)

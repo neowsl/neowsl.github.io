@@ -1,33 +1,32 @@
-- title: Lead AI Engineer
+- title: Machine Learning Engineer
   employer: Schweitzer Engineering Laboratories (Internship)
   link: https://selinc.com
   dates: May 2024 - September 2025
   description:
-      - Reduced defect risk for 300K+ electronic devices annually with 98.8% AP using AI-driven quality-control image processing software (PyTorch, OpenCV, Detectron2)
-      - Reduced streaming service latency by 36% with multithreaded design (UDP, FFmpeg)
-      - Optimized computational throughput by 95% by designing innovative image calibration/segmentation techniques
-      - Led and mentored 4 interns, improving code quality and team efficiency through task assignments, code reviews, and Agile ceremonies (sprint planning, retros)
-      - Contributed 400+ commits and 10K lines of production code, emphasizing scalability and maintainability across systems
-      - Sole high school engineer at a 7,000+ employee company; earned full development responsibilities and presented weekly technical demos to company executives and VPs
+      - Directed and mentored sub-team of 4 interns in Agile environment, overseeing code reviews and system design to ensure high scalability and maintainability across 10K+ lines of production code
+      - Reduced defect risk for 300K+ electronic devices annually with 95% AP using AI-driven quality-control image processing software (PyTorch, OpenCV, Detectron2)
+      - Decreased streaming service latency by 36% with multithreaded design (UDP, FFmpeg)
+      - Boosted throughput by 95% via image segmentation techniques (SIFT), transforming choppy 0.2-FPS process into smooth 30-FPS streaming
+      - Owned full development lifecycle for enterprise software; independently architected system features and delivered weekly technical milestones/demos to executive leadership (VPs)
 
-- title: Lead UX Designer/Researcher
+- title: Full-Stack Engineer
   employer: Schweitzer Engineering Laboratories (Internship)
   link: https://selinc.com
   dates: May 2024 - September 2025
   description:
       - Spearheaded development of 3D work instruction platform (TypeScript React, Three.js, C# ASP.NET); accelerated 4-month project to MVP in under 3 weeks, enabling early user testing
       - Boosted HCI accessibility and efficiency by 37% through UI/UX redesign, authoring mixed-methods UX research report to inform future improvements
-      - Integrated Go + PostgreSQL backend services and embedded Lua scripting for real-time rendering, and automated builds and tests with Jenkins + Docker CI/CD pipelines
-      - Collaborated with product line, test engineering, and manufacturing teams to align technical solutions with end-user needs.
+      - Integrated Go + PostgreSQL backend services and embedded Lua scripting for real-time rendering; automated builds and tests with Jenkins + Docker CI/CD pipelines
+      - Collaborated with product line, test engineering, and manufacturing teams to align technical solutions with end-user needs
 
 - title: "Teaching Assistant: CSE 12x"
-  employer: University of Washington
+  employer: University of Washington, Paul G. Allen School of Computer Science & Engineering
   link: https://courses.cs.washington.edu/courses/cse14x/ta
   dates: January 2026 - Present
   description:
-      - Serve as Teaching Assistant for introductory programming, teaching weekly sections for 22 students
-      - Lead development of interactive demo websites (Python, SvelteKit) to translate abstract CS concepts into intuitive, real-time visualizations
-      - Host office hours and provide individualized support on programming assignments
+      - Mentored 39 students in Java fundamentals and data structures, achieving a 4.8/5.0 student evaluation score and maintaining 86% attendance by facilitating biweekly tutorial sections and hosting 1-on-1 office hours
+      - Architected interactive SvelteKit/Python tools to visualize Map, Stack, and Queue ADTs, and authored exam questions for 350+ students
+      - Optimized grading efficiency by 8% for staff of 90+ TAs by developing JUnit-integrated static analysis rules; engineered AST-based checks to validate stylistic compliance for an internal Java linter
 
 - title: Educational Computer Science YouTube Channel
   employer: "@neowsl"

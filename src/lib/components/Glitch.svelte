@@ -1,22 +1,22 @@
 <script lang="ts">
-    const TEXT = "『软件工程师』";
+const TEXT = "『软件工程师』";
 
-    let glitched = $state(false);
+let glitched = $state(false);
 
-    const loop = () => {
-        const delay = Math.floor(Math.random() * 2000) + 2000;
+const loop = () => {
+    const delay = Math.floor(Math.random() * 2000) + 2000;
 
-        setTimeout(() => {
-            glitched = !glitched;
-            loop();
-        }, delay);
-    };
+    setTimeout(() => {
+        glitched = !glitched;
+        loop();
+    }, delay);
+};
 
-    $effect(() => {
-        setTimeout(() => {
-            loop();
-        }, 4000);
-    });
+$effect(() => {
+    setTimeout(() => {
+        loop();
+    }, 4000);
+});
 </script>
 
 <!-- source: https://codepen.io/cbanlawi/pen/xxRBeMY -->

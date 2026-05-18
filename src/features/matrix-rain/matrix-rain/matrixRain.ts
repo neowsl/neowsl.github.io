@@ -17,8 +17,11 @@ export class MatrixRain {
     private mouse: Mouse = { x: -1000, y: -1000, acc: 0 };
 
     constructor(canvas: HTMLCanvasElement) {
+        const ctx = canvas.getContext("2d");
+        if (!ctx) throw new Error();
+
         this.canvas = canvas;
-        this.ctx = canvas.getContext("2d")!;
+        this.ctx = ctx;
     }
 
     update = () => {

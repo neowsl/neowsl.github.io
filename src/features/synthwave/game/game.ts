@@ -1,7 +1,7 @@
+import * as THREE from "three";
 import { mp } from "$lib/stores/mp.svelte";
 import { score } from "$lib/stores/score.svelte";
 import { getPeak } from "$lib/utils/music";
-import * as THREE from "three";
 import {
     CAR_JUMP,
     CAR_JUMP_DECAY,

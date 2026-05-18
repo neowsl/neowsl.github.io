@@ -1,5 +1,5 @@
 <script lang="ts">
-    import MetallicText from "$lib/components/MetallicText.svelte";
+import MetallicText from "$lib/components/MetallicText.svelte";
 </script>
 
 <div id="hero" class="hero h-64">

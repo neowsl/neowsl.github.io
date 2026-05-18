@@ -1,16 +1,16 @@
 <script>
-    import {
-        ChartNoAxesColumn,
-        Github,
-        Linkedin,
-        Mail,
-        Star,
-        UserRoundCheck,
-        Youtube,
-        Zap,
-    } from "@lucide/svelte";
-    import MetallicText from "$lib/components/MetallicText.svelte";
-    import Contact from "./Contact.svelte";
+import {
+    ChartNoAxesColumn,
+    Github,
+    Linkedin,
+    Mail,
+    Star,
+    UserRoundCheck,
+    Youtube,
+    Zap,
+} from "@lucide/svelte";
+import MetallicText from "$lib/components/MetallicText.svelte";
+import Contact from "./Contact.svelte";
 </script>
 
 <div id="hero" class="hero h-[50vh]">

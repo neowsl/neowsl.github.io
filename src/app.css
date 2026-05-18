@@ -1,9 +1,8 @@
-/*! 🌼 daisyUI 5.0.50 */
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 @plugin "daisyui" {
+    /* biome-ignore lint/correctness/noUnknownProperty: daisyui */
     themes: synthwave --default;
-    logs: false;
 }
 
 @theme {

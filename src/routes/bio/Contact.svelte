@@ -1,13 +1,13 @@
 <script lang="ts">
-    import type { Snippet } from "svelte";
+import type { Snippet } from "svelte";
 
-    interface Props {
-        href: string;
-        tip: string;
-        children: Snippet;
-    }
+interface Props {
+    href: string;
+    tip: string;
+    children: Snippet;
+}
 
-    const { href, tip, children }: Props = $props();
+const { href, tip, children }: Props = $props();
 </script>
 
 <div class="tooltip tooltip-bottom" data-tip={tip}>

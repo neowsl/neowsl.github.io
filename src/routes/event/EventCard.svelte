@@ -1,12 +1,12 @@
 <script lang="ts">
-    import type { Event } from "./[id]/+page";
+import type { Event } from "./[id]/+page";
 
-    interface Props {
-        event: Event;
-    }
+interface Props {
+    event: Event;
+}
 
-    const { event }: Props = $props();
-    const { id, title, image, imageAlt, abstract, date } = event;
+const { event }: Props = $props();
+const { id, title, image, imageAlt, abstract, date } = event;
 </script>
 
 <a class="card bg-base-200 shadow-sm lg:card-side" href={`/event/${id}`}>

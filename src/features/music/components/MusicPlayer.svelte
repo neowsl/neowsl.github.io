@@ -1,90 +1,91 @@
 <script lang="ts">
-    import { Info, Music, Pause, Play, StepForward } from "@lucide/svelte";
-    import { afterNavigate } from "$app/navigation";
-    import { CONTROLS_DELAY } from "$lib/config";
-    import { mp } from "$lib/stores/mp.svelte";
-    import { ON_MOBILE } from "$lib/utils/common";
-    import { getRandomTrack } from "$lib/utils/music";
+import { Info, Music, Pause, Play, StepForward } from "@lucide/svelte";
+import { afterNavigate } from "$app/navigation";
+import { CONTROLS_DELAY } from "$lib/config";
+import { mp } from "$lib/stores/mp.svelte";
+import { ON_MOBILE } from "$lib/utils/common";
+import { getRandomTrack } from "$lib/utils/music";
 
-    const TOAST_TIME = 4000;
+const TOAST_TIME = 4000;
 
-    let modalEl: HTMLDialogElement | null = $state(null);
-    let audioEl: HTMLAudioElement | null = $state(null);
-    let track: any = $state(null); // eslint-disable-line @typescript-eslint/no-explicit-any
-    let showControls = $state(false);
-    let showToast = $state(false);
+let modalEl: HTMLDialogElement | null = $state(null);
+let audioEl: HTMLAudioElement | null = $state(null);
+// biome-ignore lint/suspicious/noExplicitAny: external api type
+let track: any = $state(null);
+let showControls = $state(false);
+let showToast = $state(false);
 
-    afterNavigate(({ from }) => {
-        mp.audioEl = audioEl;
+afterNavigate(({ from }) => {
+    mp.audioEl = audioEl;
 
-        if (from?.url) {
-            modalEl?.showModal();
-            showControls = true;
-            return;
-        }
+    if (from?.url) {
+        modalEl?.showModal();
+        showControls = true;
+        return;
+    }
 
-        setTimeout(() => {
-            modalEl?.showModal();
-            showControls = true;
-        }, CONTROLS_DELAY);
-    });
+    setTimeout(() => {
+        modalEl?.showModal();
+        showControls = true;
+    }, CONTROLS_DELAY);
+});
 
-    $effect(() => {
-        if (mp.paused) {
-            audioEl?.pause();
-        } else {
-            audioEl?.play();
-        }
-    });
+$effect(() => {
+    if (mp.paused) {
+        audioEl?.pause();
+    } else {
+        audioEl?.play();
+    }
+});
 
-    $effect(() => {
-        if (audioEl && audioEl.paused) {
-            mp.paused = false;
-        }
-    });
-
-    const nextTrack = async () => {
-        track = await getRandomTrack();
-        if (audioEl) {
-            audioEl.src = track.audio;
-        }
-    };
-
-    const toast = () => {
-        showToast = true;
-        setTimeout(() => {
-            showToast = false;
-        }, TOAST_TIME);
-    };
-
-    const play = async () => {
-        await nextTrack();
-
+$effect(() => {
+    if (audioEl?.paused) {
         mp.paused = false;
-        modalEl?.close();
+    }
+});
 
-        toast();
-    };
+const nextTrack = async () => {
+    track = await getRandomTrack();
+    if (audioEl) {
+        audioEl.src = track.audio;
+    }
+};
 
-    const togglePaused = () => {
-        if (!audioEl) {
-            return;
-        }
+const toast = () => {
+    showToast = true;
+    setTimeout(() => {
+        showToast = false;
+    }, TOAST_TIME);
+};
 
-        if (audioEl.paused) {
-            mp.paused = false;
-        } else {
-            mp.paused = true;
-        }
-    };
+const play = async () => {
+    await nextTrack();
 
-    const start = () => {
-        if (!audioEl) {
-            return;
-        }
+    mp.paused = false;
+    modalEl?.close();
 
-        mp.waveform = JSON.parse(track.waveform).peaks;
-    };
+    toast();
+};
+
+const togglePaused = () => {
+    if (!audioEl) {
+        return;
+    }
+
+    if (audioEl.paused) {
+        mp.paused = false;
+    } else {
+        mp.paused = true;
+    }
+};
+
+const start = () => {
+    if (!audioEl) {
+        return;
+    }
+
+    mp.waveform = JSON.parse(track.waveform).peaks;
+};
 </script>
 
 <dialog class="modal h-screen w-screen cursor-default" bind:this={modalEl}>
@@ -101,12 +102,12 @@
                 <div class="flex items-center gap-2 py-2">
                     Use
                     <div class="flex items-center gap-1">
-                        <kbd class="kbd">◀︎</kbd>
+                        <kbd class="kbd">◀</kbd>
                         <div class="flex flex-col gap-1">
                             <kbd class="kbd">▲</kbd>
                             <kbd class="kbd">▼</kbd>
                         </div>
-                        <kbd class="kbd">▶︎</kbd>
+                        <kbd class="kbd">▶</kbd>
                     </div>
                     or your mouse;
                 </div>

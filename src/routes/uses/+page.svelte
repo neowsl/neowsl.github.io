@@ -1,6 +1,6 @@
 <script lang="ts">
-    import Banner from "$lib/components/Banner.svelte";
-    import Uses from "./uses.svx";
+import Banner from "$lib/components/Banner.svelte";
+import Uses from "./uses.svx";
 </script>
 
 <Banner title="Uses" image="bee" />

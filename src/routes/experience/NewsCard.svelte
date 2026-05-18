@@ -1,22 +1,22 @@
 <script lang="ts">
-    import { ExternalLink } from "@lucide/svelte";
+import { ExternalLink } from "@lucide/svelte";
 
-    export interface Article {
-        image: string;
-        imageAlt?: string;
-        title: string;
-        description: string;
-        date: Date;
-        repo?: string;
-        link: string;
-    }
+export interface Article {
+    image: string;
+    imageAlt?: string;
+    title: string;
+    description: string;
+    date: Date;
+    repo?: string;
+    link: string;
+}
 
-    interface Props {
-        article: Article;
-    }
+interface Props {
+    article: Article;
+}
 
-    const { article }: Props = $props();
-    const { image, imageAlt, title, description, date, repo, link } = article;
+const { article }: Props = $props();
+const { image, imageAlt, title, description, date, repo, link } = article;
 </script>
 
 <div class="card bg-base-200 shadow-sm lg:card-side">

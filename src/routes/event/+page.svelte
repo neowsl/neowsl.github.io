@@ -1,9 +1,9 @@
 <script lang="ts">
-    import Banner from "$lib/components/Banner.svelte";
-    import EventCard from "./EventCard.svelte";
+import Banner from "$lib/components/Banner.svelte";
+import EventCard from "./EventCard.svelte";
 
-    const { data } = $props();
-    const { events } = data;
+const { data } = $props();
+const { events } = data;
 </script>
 
 <Banner title="Events" image="water_drop" />

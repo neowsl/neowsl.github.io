@@ -1,26 +1,26 @@
 <script lang="ts">
-    import "../app.css";
-    import { onNavigate } from "$app/navigation";
-    import { page } from "$app/state";
-    import InceptionTop from "$features/inception-top/components/InceptionTop.svelte";
-    import Navbar from "$features/navbar/components/Navbar.svelte";
+import "../app.css";
+import { onNavigate } from "$app/navigation";
+import { page } from "$app/state";
+import InceptionTop from "$features/inception-top/components/InceptionTop.svelte";
+import Navbar from "$features/navbar/components/Navbar.svelte";
 
-    let { children } = $props();
+let { children } = $props();
 
-    const main = $derived(page.url.pathname === "/");
+const main = $derived(page.url.pathname === "/");
 
-    onNavigate((navigation) => {
-        if (!document.startViewTransition) {
-            return;
-        }
+onNavigate((navigation) => {
+    if (!document.startViewTransition) {
+        return;
+    }
 
-        return new Promise((resolve) => {
-            document.startViewTransition(async () => {
-                resolve();
-                await navigation.complete;
-            });
+    return new Promise((resolve) => {
+        document.startViewTransition(async () => {
+            resolve();
+            await navigation.complete;
         });
     });
+});
 </script>
 
 <svelte:head>

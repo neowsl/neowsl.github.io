@@ -1,13 +1,13 @@
 <script lang="ts">
-    import Banner from "$lib/components/Banner.svelte";
-    import yaml from "js-yaml";
-    import articlesRaw from "./articles.yaml?raw";
-    import NewsCard, { type Article } from "./NewsCard.svelte";
-    import WorkEntry, { type Work } from "./WorkEntry.svelte";
-    import worksRaw from "./works.yaml?raw";
+import yaml from "js-yaml";
+import Banner from "$lib/components/Banner.svelte";
+import articlesRaw from "./articles.yaml?raw";
+import NewsCard, { type Article } from "./NewsCard.svelte";
+import WorkEntry, { type Work } from "./WorkEntry.svelte";
+import worksRaw from "./works.yaml?raw";
 
-    const articles = yaml.load(articlesRaw) as Article[];
-    const works = yaml.load(worksRaw) as Work[];
+const articles = yaml.load(articlesRaw) as Article[];
+const works = yaml.load(worksRaw) as Work[];
 </script>
 
 <Banner title="Experience" image="gears" smallerText />

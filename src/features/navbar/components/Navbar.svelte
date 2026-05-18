@@ -1,16 +1,16 @@
 <script>
-    import { Github, Menu, X } from "@lucide/svelte";
-    import { slide } from "svelte/transition";
+import { Github, Menu, X } from "@lucide/svelte";
+import { slide } from "svelte/transition";
 
-    let menuOpen = $state(false);
+let menuOpen = $state(false);
 
-    const toggleMenu = () => {
-        menuOpen = !menuOpen;
-    };
+const toggleMenu = () => {
+    menuOpen = !menuOpen;
+};
 
-    const closeMenu = () => {
-        menuOpen = false;
-    };
+const closeMenu = () => {
+    menuOpen = false;
+};
 </script>
 
 <nav

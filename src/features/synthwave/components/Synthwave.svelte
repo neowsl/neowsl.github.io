@@ -1,103 +1,103 @@
 <script lang="ts">
-    import { T, useTask, useThrelte } from "@threlte/core";
-    import { useGltf } from "@threlte/extras";
-    import { TAU } from "$lib/config";
-    import { mp } from "$lib/stores/mp.svelte";
-    import { onDestroy, onMount } from "svelte";
-    import * as THREE from "three";
-    import gridFragmentShader from "../assets/grid.frag.glsl?raw";
-    import gridVertexShader from "../assets/grid.vert.glsl?raw";
-    import sunFragmentShader from "../assets/sun.frag.glsl?raw";
-    import sunURL from "../assets/sun.png";
-    import sunVertexShader from "../assets/sun.vert.glsl?raw";
-    import { NOTE_SPAWN_DISTANCE } from "../game/config";
-    import { Game } from "../game/game";
-    import type { Note } from "../game/types";
+import { T, useTask, useThrelte } from "@threlte/core";
+import { useGltf } from "@threlte/extras";
+import { onDestroy, onMount } from "svelte";
+import * as THREE from "three";
+import { TAU } from "$lib/config";
+import { mp } from "$lib/stores/mp.svelte";
+import gridFragmentShader from "../assets/grid.frag.glsl?raw";
+import gridVertexShader from "../assets/grid.vert.glsl?raw";
+import sunFragmentShader from "../assets/sun.frag.glsl?raw";
+import sunURL from "../assets/sun.png";
+import sunVertexShader from "../assets/sun.vert.glsl?raw";
+import { NOTE_SPAWN_DISTANCE } from "../game/config";
+import { Game } from "../game/game";
+import type { Note } from "../game/types";
 
-    const { camera } = useThrelte();
-    const gltf = useGltf("/models/toyota_corolla_ae86_trueno.glb");
+const { camera } = useThrelte();
+const gltf = useGltf("/models/toyota_corolla_ae86_trueno.glb");
 
-    const game = new Game();
+const game = new Game();
 
-    let scale = $state(1);
-    let time = $state(0);
-    let peak = $state(0);
-    let notes = $state<Note[]>([]);
-    let carX = $state(0);
-    let carY = $state(0);
-    let carZ = $state(0);
-    let carRotation = $state(0);
+let scale = $state(1);
+let time = $state(0);
+let peak = $state(0);
+let notes = $state<Note[]>([]);
+let carX = $state(0);
+let carY = $state(0);
+let carZ = $state(0);
+let carRotation = $state(0);
 
-    let gridMaterial = $state(
-        new THREE.ShaderMaterial({
-            fragmentShader: gridFragmentShader,
-            vertexShader: gridVertexShader,
-            transparent: true,
-            uniforms: {
-                uTime: { value: 0 },
-                uPeak: { value: 0 },
+let gridMaterial = $state(
+    new THREE.ShaderMaterial({
+        fragmentShader: gridFragmentShader,
+        vertexShader: gridVertexShader,
+        transparent: true,
+        uniforms: {
+            uTime: { value: 0 },
+            uPeak: { value: 0 },
+        },
+    }),
+);
+
+let sunMaterial = $state(
+    new THREE.ShaderMaterial({
+        fragmentShader: sunFragmentShader,
+        vertexShader: sunVertexShader,
+        transparent: true,
+        uniforms: {
+            uTime: { value: 0 },
+            uResolution: {
+                value: new THREE.Vector2(innerWidth, innerHeight),
             },
-        }),
-    );
+            uTexture: { value: null },
+            uPeak: { value: 0 },
+        },
+    }),
+);
 
-    let sunMaterial = $state(
-        new THREE.ShaderMaterial({
-            fragmentShader: sunFragmentShader,
-            vertexShader: sunVertexShader,
-            transparent: true,
-            uniforms: {
-                uTime: { value: 0 },
-                uResolution: {
-                    value: new THREE.Vector2(innerWidth, innerHeight),
-                },
-                uTexture: { value: null },
-                uPeak: { value: 0 },
-            },
-        }),
-    );
+let carScene: THREE.Group | undefined = $state();
+let carCollider = new THREE.Box3();
 
-    let carScene: THREE.Group | undefined = $state();
-    let carCollider = new THREE.Box3();
+onMount(async () => {
+    game.init();
 
-    onMount(async () => {
-        game.init();
+    const sunTexture = await new THREE.TextureLoader().loadAsync(sunURL);
+    sunMaterial.uniforms.uTexture.value = sunTexture;
+});
 
-        const sunTexture = await new THREE.TextureLoader().loadAsync(sunURL);
-        sunMaterial.uniforms.uTexture.value = sunTexture;
-    });
+$effect(() => {
+    game.restart();
 
-    $effect(() => {
-        game.restart();
+    mp.waveform; // eslint-disable-line
+});
 
-        mp.waveform; // eslint-disable-line
-    });
+onDestroy(() => {
+    game.deinit();
+});
 
-    onDestroy(() => {
-        game.deinit();
-    });
+useTask((delta) => {
+    game.update(delta, camera.current, carCollider);
 
-    useTask((delta) => {
-        game.update(delta, camera.current, carCollider);
+    scale = game.scale;
+    time = game.time;
+    peak = game.peak;
+    notes = game.notes;
+    carX = game.car.position.x;
+    carY = game.car.position.y;
+    carZ = game.car.position.z;
+    carRotation = game.car.rotation;
 
-        scale = game.scale;
-        time = game.time;
-        peak = game.peak;
-        notes = game.notes;
-        carX = game.car.position.x;
-        carY = game.car.position.y;
-        carZ = game.car.position.z;
-        carRotation = game.car.rotation;
+    gridMaterial.uniforms.uTime.value = time;
+    sunMaterial.uniforms.uTime.value = time;
 
-        gridMaterial.uniforms.uTime.value = time;
-        sunMaterial.uniforms.uTime.value = time;
+    gridMaterial.uniforms.uPeak.value = peak;
+    sunMaterial.uniforms.uPeak.value = peak;
 
-        gridMaterial.uniforms.uPeak.value = peak;
-        sunMaterial.uniforms.uPeak.value = peak;
-
-        if (carScene) {
-            carCollider.setFromObject(carScene);
-        }
-    });
+    if (carScene) {
+        carCollider.setFromObject(carScene);
+    }
+});
 </script>
 
 <T.AmbientLight intensity={0.05} color="#00bafe" />

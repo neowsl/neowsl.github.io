@@ -1,25 +1,16 @@
 <script lang="ts">
-    import { ExternalLink } from "@lucide/svelte";
+import { ExternalLink } from "@lucide/svelte";
 
-    const { data } = $props();
-    const { event } = data;
-    const {
-        title,
-        image,
-        imageAlt,
-        abstract,
-        date,
-        end,
-        name,
-        location,
-        link,
-    } = event;
+const { data } = $props();
+const { event } = data;
+const { title, image, imageAlt, abstract, date, end, name, location, link } =
+    event;
 
-    const LOCALE_TIME_STRING_OPTIONS: Intl.DateTimeFormatOptions = {
-        hour: "2-digit",
-        minute: "2-digit",
-        second: undefined,
-    };
+const LOCALE_TIME_STRING_OPTIONS: Intl.DateTimeFormatOptions = {
+    hour: "2-digit",
+    minute: "2-digit",
+    second: undefined,
+};
 </script>
 
 <div class="my-8 flex justify-center p-4 sm:p-8">

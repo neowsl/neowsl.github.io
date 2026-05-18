@@ -1,13 +1,13 @@
 <script lang="ts">
-    import MetallicText from "./MetallicText.svelte";
+import MetallicText from "./MetallicText.svelte";
 
-    interface Props {
-        title: string;
-        image: string;
-        smallerText: boolean;
-    }
+interface Props {
+    title: string;
+    image: string;
+    smallerText: boolean;
+}
 
-    const { title, image, smallerText }: Props = $props();
+const { title, image, smallerText }: Props = $props();
 </script>
 
 <div

@@ -27,7 +27,7 @@ import Contact from "./Contact.svelte";
             </p>
             <p class="mb-4 md:text-xl">Schweitzer Engineering Laboratories</p>
             <div class="flex justify-center gap-4">
-                <Contact href="mailto:nealwang.sh@protonmail.com" tip="Email">
+                <Contact href="mailto:me@nealwang.dev" tip="Email">
                     <Mail />
                 </Contact>
                 <Contact href="https://github.com/neowsl" tip="GitHub">

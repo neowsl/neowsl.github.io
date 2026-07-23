@@ -23,7 +23,7 @@ import Contact from "./Contact.svelte";
                 </h1>
             </a>
             <p class="font-bold md:text-xl">
-                Machine Learning + Full-Stack Engineer
+                Data / ML / Full-Stack Engineer
             </p>
             <p class="mb-4 md:text-xl">Schweitzer Engineering Laboratories</p>
             <div class="flex justify-center gap-4">

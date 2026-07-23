@@ -18,7 +18,7 @@ export const getRandomTrack = async () => {
 };
 
 export const getPeak = (time?: number): number => {
-    if (!mp.audioEl || !mp.audioEl.duration || !mp.waveform.length) {
+    if (!mp.audioEl?.duration || !mp.waveform.length) {
         return -1;
     }
 

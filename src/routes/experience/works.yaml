@@ -1,3 +1,15 @@
+- title: Data Engineer
+  employer: Amazon (Internship)
+  link: https://amazon.com
+  dates: September 2025 - December 2025
+  description:
+
+- title: Data Engineer
+  employer: Schweitzer Engineering Laboratories (Internship)
+  link: https://selinc.com
+  dates: July 2025 - September 2025
+  description:
+
 - title: Machine Learning Engineer
   employer: Schweitzer Engineering Laboratories (Internship)
   link: https://selinc.com
@@ -5,9 +17,9 @@
   description:
       - Directed and mentored sub-team of 4 interns in Agile environment, overseeing code reviews and system design to ensure high scalability and maintainability across 10K+ lines of production code
       - Reduced defect risk for 300K+ electronic devices annually with 95% AP using AI-driven quality-control image processing software (PyTorch, OpenCV, Detectron2)
-      - Decreased streaming service latency by 36% with multithreaded design (UDP, FFmpeg)
-      - Boosted throughput by 95% via image segmentation techniques (SIFT), transforming choppy 0.2-FPS process into smooth 30-FPS streaming
-      - Owned full development lifecycle for enterprise software; independently architected system features and delivered weekly technical milestones/demos to executive leadership (VPs)
+      - Decreased streaming service latency by 36% with multithreaded design (FFmpeg)
+      - Reduced data ingress volume by 95% via deterministic ROI extraction, transforming choppy 0.2-FPS process into smooth 30-FPS streaming
+      - Owned full development lifecycle for enterprise software; delivered weekly technical milestones/demos to executive leadership (VPs)
 
 - title: Full-Stack Engineer
   employer: Schweitzer Engineering Laboratories (Internship)

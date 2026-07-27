@@ -34,7 +34,17 @@
 3. Sibelius Violin Concerto
 4. Mahler Symphony No. 4
 5. Tchaikovsky Symphony No. 2
-5. Holst Planets Suite
+6. Holst Planets Suite
+7. Christopher Tin: Waloyo Yamoni, Baba Yetu
+
+# Learning Resources
+
+- [Gossip Glomers](https://fly.io/blog/gossip-glomers)
+- [Mini-LSM](https://skyzh.github.io/mini-lsm)
+- [Nand to Tetris](https://www.nand2tetris.org)
+- [Julia Evans's wizard zines](https://wizardzines.com)
+- [explainshell.com](https://explainshell.com)
+- [CodeCrafters](https://codecrafters.io)
 
 # Fun Stuff
 
@@ -42,3 +52,4 @@
 - [One Million Checkboxes](https://onemillioncheckboxes.com)
 - [Library of Babel](https://libraryofbabel.info)
 - [Typing the technical interview](https://aphyr.com/posts/342-typing-the-technical-interview)
+- [Bartosz Ciechanowski's Blog](https://ciechanow.ski)

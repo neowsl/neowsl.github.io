@@ -22,9 +22,7 @@ import Contact from "./Contact.svelte";
                     <MetallicText>Neal Wang</MetallicText>
                 </h1>
             </a>
-            <p class="font-bold md:text-xl">
-                Data / ML / Full-Stack Engineer
-            </p>
+            <p class="font-bold md:text-xl">Data / ML / Full-Stack Engineer</p>
             <p class="mb-4 md:text-xl">Schweitzer Engineering Laboratories</p>
             <div class="flex justify-center gap-4">
                 <Contact href="mailto:me@nealwang.dev" tip="Email">
@@ -93,12 +91,12 @@ import Contact from "./Contact.svelte";
         </h1>
         <div class="md:text-lg">
             <p class="mb-4">
-                <strong>Specialties:</strong> Machine Learning, System Architecture,
-                Leadership
+                <strong>Interests:</strong> Distributed Systems, Database Internals,
+                Programming Languages
             </p>
             <p>
-                <strong>Languages:</strong> TypeScript, Java, Rust, C, C++, Python,
-                Lua, Go, C#, Verilog, SQL, Haskell, Typst
+                <strong>Languages:</strong> Go, TypeScript, C#, Java, Rust, C, C++,
+                Python, Lua, Verilog, SQL, Haskell, Typst
             </p>
         </div>
     </div>

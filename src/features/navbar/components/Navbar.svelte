@@ -1,5 +1,5 @@
 <script>
-import { Github, Menu, X } from "@lucide/svelte";
+import { GitBranch, Menu, X } from "@lucide/svelte";
 import { slide } from "svelte/transition";
 
 let menuOpen = $state(false);
@@ -48,9 +48,9 @@ const closeMenu = () => {
 
     <div class="flex-1"></div>
 
-    <div class="tooltip tooltip-left" data-tip="GitHub repo">
-        <a href="https://github.com/neowsl/neowsl.github.io" target="_blank">
-            <Github />
+    <div class="tooltip tooltip-left" data-tip="Codeberg repo">
+        <a href="https://codeberg.org/nealwang/pages" target="_blank">
+            <GitBranch />
         </a>
     </div>
 

@@ -1,12 +1,12 @@
 <script>
 import {
+    BookUser,
     ChartNoAxesColumn,
     GitBranch,
-    Linkedin,
     Mail,
     Star,
+    TvMinimalPlay,
     UserRoundCheck,
-    Youtube,
     Zap,
 } from "@lucide/svelte";
 import MetallicText from "$lib/components/MetallicText.svelte";
@@ -32,13 +32,13 @@ import Contact from "./Contact.svelte";
                     <GitBranch />
                 </Contact>
                 <Contact href="https://youtube.com/@neowsl" tip="YouTube">
-                    <Youtube />
+                    <TvMinimalPlay />
                 </Contact>
                 <Contact
                     href="https://www.linkedin.com/in/nealwang-sh"
                     tip="LinkedIn"
                 >
-                    <Linkedin />
+                    <BookUser />
                 </Contact>
                 <Contact
                     href="https://codeforces.com/profile/neowsl"

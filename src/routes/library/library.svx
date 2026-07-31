@@ -1,10 +1,14 @@
-## Literature
+## Books
 
 - The Bible (ESV)
-- [Designing Data-Intensive Applications](https://0-lucas.github.io/digital-garden/99.-Books/Martin-Kleppmann---Designing-Data-Intensive-Applications_-O%E2%80%99Reilly-Media-(2017).pdf)
 - [The Cuckoo's Egg](https://lander.odessa.ua/doc/The%20Cuckoo_s%20Egg%20Clifford%20Stoll.pdf)
 - [Logicomix](https://profesorvargasguillen.wordpress.com/wp-content/uploads/2013/11/logicomix.pdf)
 - Feel-Good Productivity
+
+## Technical Literature
+
+- [Designing Data-Intensive Applications](https://0-lucas.github.io/digital-garden/99.-Books/Martin-Kleppmann---Designing-Data-Intensive-Applications_-O%E2%80%99Reilly-Media-(2017).pdf)
+- [Time, Clocks, and the Ordering of Events in a Distributed System](https://lamport.azurewebsites.net/pubs/time-clocks.pdf)
 
 ## Learning Resources
 

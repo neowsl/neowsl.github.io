@@ -21,8 +21,11 @@ jobs:
                 curl -fsSL https://bun.sh/install | bash -s -- bun-v1.3.14
                 echo "$HOME/.bun/bin" >> "$GITHUB_PATH"
 
-            - name: Install dependencies
-              run: bun install --frozen-lockfile
+            - name: Install Dependencies (IPv4 workaround)
+              run: |
+                IP=$(getent hosts registry.npmjs.org | awk '{print $1}' | grep -E '^[0-9.]+$' | head -1)
+                echo "$IP registry.npmjs.org" >> /etc/hosts
+                bun install
 
             - name: Build
               run: bun run build

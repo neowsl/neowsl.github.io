@@ -48,8 +48,8 @@ const closeMenu = () => {
 
     <div class="flex-1"></div>
 
-    <div class="tooltip tooltip-left" data-tip="Codeberg repo">
-        <a href="https://codeberg.org/nealwang/pages" target="_blank">
+    <div class="tooltip tooltip-left" data-tip="Git repo">
+        <a href="https://git.nealwang.dev/neo/nealwang.dev" target="_blank">
             <GitBranch />
         </a>
     </div>

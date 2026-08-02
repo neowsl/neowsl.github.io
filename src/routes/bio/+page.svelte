@@ -28,7 +28,7 @@ import Contact from "./Contact.svelte";
                 <Contact href="mailto:me@nealwang.dev" tip="Email">
                     <Mail />
                 </Contact>
-                <Contact href="https://codeberg.org/nealwang" tip="Codeberg">
+                <Contact href="https://git.nealwang.dev" tip="Git">
                     <GitBranch />
                 </Contact>
                 <Contact href="https://youtube.com/@neowsl" tip="YouTube">
@@ -66,7 +66,7 @@ import Contact from "./Contact.svelte";
             <div class="stat-figure hidden text-secondary md:block">
                 <Star />
             </div>
-            <div class="stat-title">Codeberg Stars</div>
+            <div class="stat-title">Git Stars</div>
             <div class="stat-value text-2xl sm:text-4xl">2</div>
             <div class="stat-desc">Thanks Mom!</div>
         </div>

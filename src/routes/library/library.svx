@@ -30,6 +30,7 @@
 - [One Million Checkboxes](https://onemillioncheckboxes.com)
 - [Library of Babel](https://libraryofbabel.info)
 - [Typing the technical interview](https://aphyr.com/posts/342-typing-the-technical-interview)
+- [ZeroVer](https://0ver.org)
 
 ---
 

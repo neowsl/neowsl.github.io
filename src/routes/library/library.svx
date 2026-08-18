@@ -13,6 +13,7 @@
 ## Learning Resources
 
 - [Gossip Glomers](https://fly.io/blog/gossip-glomers)
+- [Hypermedia Systems](https://hypermedia.systems)
 - [Mini-LSM](https://skyzh.github.io/mini-lsm)
 - [Nand to Tetris](https://www.nand2tetris.org)
 - [Julia Evans's wizard zines](https://wizardzines.com)

@@ -22,7 +22,11 @@
 
 ## Blogs
 
+- [Tom7](https://tom7.org)
 - [Aphyr](https://aphyr.com)
+- [The Daily WTF](https://thedailywtf.com)
+- [Julia Evans](https://jvns.ca)
+- [Steph Ango](https://stephango.com)
 - [Bartosz Ciechanowski](https://ciechanow.ski)
 
 ## Fun Stuff

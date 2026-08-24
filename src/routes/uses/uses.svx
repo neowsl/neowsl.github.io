@@ -1,11 +1,13 @@
-[Dotfiles](https://github.com/neowsl/nix-home)
+[Dotfiles](https://git.nealwang.dev/neo/nix-home)
 
-**Colour Scheme**: [Catppuccin](https://github.com/catppuccin/catppuccin)
+**OS:** GNU/Linux
 
 **Distro:** [NixOS](https://nixos.org)
 
-**Editor:** [Doom Emacs](https://github.com/doomemacs/doomemacs) / [Neovim](https://neovim.io)
-
-**Terminal:** [kitty](https://sw.kovidgoyal.net/kitty)
-
 **Compositor:** [niri](https://github.com/niri-wm/niri)
+
+**Colour Scheme**: [Catppuccin](https://github.com/catppuccin/catppuccin)
+
+**Terminal:** [Ghostty](https://ghostty.org)
+
+**Editor:** [Neovim](https://neovim.io)

@@ -37,6 +37,7 @@
 - [Library of Babel](https://libraryofbabel.info)
 - [Typing the technical interview](https://aphyr.com/posts/342-typing-the-technical-interview)
 - [ZeroVer](https://0ver.org)
+- [What happens when...](https://github.com/alex/what-happens-when)
 
 ---
 
